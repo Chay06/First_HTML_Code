@@ -1,132 +1,39 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset=" UTF-8">
-        <meta name="description" content="HELLO WORLD">
-        <title>
-            Growth Website
-        </title>
-
-    </head>
-    <body  style="background-color:rgba(247, 247, 243, 0.935);">
-       
-        
-       <img   src= alt="PROFILE"/>
-
-        <header>
-            <h2>CHAITHANYA KOTAGIRI</h2>
-        </header>
-
-        <main>
-            <section>COLLEGE : BVRIT (CSE) | II YEAR UNDERGRAD
-                <br/>
-                SCHOOL : GMS (10 GPA)
-            </section>
-            <section>
-                <h2>SKILLS </h2>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlotMadeEasy</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="data:image/png;base64,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"></a>
+            <div class="nav-links">
                 <ul>
-                    <li>C language</li>
-                    <li> Python
-                    </li>
-                    <li> HTML and CSS</li>
+                    <li><a href="admin.html">ADMIN</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="">UPDATES</a></li>
+                    
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <Li><a href="">LOGOUT</a></Li>
                 </ul>
-                <h2>
-                    LANGUAGES KNOWN
-                </h2>
-                <ol>
-                    <li>Telugu</li>
-                    <li>Hindi</li>
-                    <li>English</li>
-                </ol>
-            </section>
-
-            <section>
-                <pre>
-                    <thead>
-                <table>
-                    <caption>EDUCATION DETAILS</caption>
-                    <tr>
-                        <th>EDUACTION   </th>
-                        <th>MARKS  </th>
-                        <th>PASS_OUT_YEAR  </th>
-                        <th>NAME  </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>COLLEGE</td>
-                        <td>9.5</td>
-                        <td>2025</td>
-                        <td>BVRIT</td>
-
-                    </tr>
-                    <tr>
-                        <td>SCHOOL</td>
-                        <td>10</td>
-                        <td>2019</td>
-                        <td>GMS</td>
-                    </tr>
-                </tbody>
-                </table>
-            </pre>
-            </section>
-
-        </main>
-        <form action="/action.php">
-            <p><b>ENTER YOUR DETAILS</b></p>
-            <input type="text" placeholder="enter your data">
-            <br/><br/>
-           <input type="password" placeholder="enter your data">
-           <br/><br/>
-           <p><b>SELECT YEAR OF STUDY</b></p>
-           <label for ="104">
-           <input type="radio" value="II year" name="YEAR" id="104"> II year
-           </label>
-           
-           <label for ="105">
-           <input type="radio" value="III year" name=" YEAR" id="105"> III year
-           </label>
-           <br/>
-           <br/>
-            
-            <p> <b>SELECT LANGUAGES </b></p>
-           <label for="C">
-           <input type="checkbox" val="C" name="language" id="1">C
-           </label>
-           <label for="'PYTHON">
-           <input type="checkbox" val="PYTHON" name="language" id="2">PYTHON
-           </label>
-           <label for="C++">
-           <input type="checkbox" val="C++" name="language" id="3">C++
-           </label>
-           <label for="JAVA">
-           <input type="checkbox" val="JAVA" name="language" id="4">JAVA
-        </label>
-        <br/>
-        <br/>
-        <p><b>SELECT ANY SKILL</b></p>
-        <select name="skill" id="skill">
-            <option value="WEB DEVELOPEMENT">WEB DEVELOPEMENT</option>
-            <option value="MACHINE LEARNING">MACHINE LEARNING</option>
-            <option value="DIGITAL MARKETING">DIGITAL MARKETING</option>
-            <option value="CONTENT CREATION">CONTENT CREATION</option>
-
-        </select>
-        <br/><br/>
-        <p><b> GIVE YOUR FEEDBACK</b></p>
-
-        <textarea  name="review" id="10" placeholder="write the review" rows="10"></textarea>
-        <br/>
-        <input type="Submit" val="submit">
-
-
-
-        </form>
-        
-
-
-
-
-
-    </body>
+            </div>
+        </nav>
+    <div class="text-box">
+        <h1>INDOOR STADIUM SLOT BOOKING</h1>
+        <P>Fitness is all we need</P>
+    </div>
+    <div class="text-button">
+        <a href="faculty login.html"class="hero-btn">To Faculty</a>  <a href="student login.html"class="stu-btn">To Student</a>
+    </div>
+    <div class="footer">
+        <h4>About Us</h4>
+        <p>The main aim is to introduce slot booking system in sports complex ,to solve the problems like student gatherings,<br> waiting period and also to provide fair chance for everyone.
+        </p>
+        <div class="end">
+            <p>Made by CURIOUS SOULS team (B.V.R.I.T students)</p>
+            </div>
+   
+</body>
 </html>
